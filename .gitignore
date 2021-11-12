@@ -458,3 +458,6 @@ appsettings.json
 
 #Database 
 simpledationgapp.db*
+
+#SSL Certificates
+ssl
