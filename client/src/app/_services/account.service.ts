@@ -6,6 +6,7 @@ import { User } from '../_models/user';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AccountService {
   baseUrl = 'https://localhost:5001/api/';
   private currentUserSource = new ReplaySubject<User>(1);
@@ -14,6 +15,7 @@ export class AccountService {
   constructor(private http: HttpClient) { }
 
   login(model : any) {
+
     return this.http.post(this.baseUrl + 'account/login', model).pipe(
       map((response: User) => {
         const user = response;
@@ -26,6 +28,7 @@ export class AccountService {
   }
 
   register(model: any) {
+    
     return this.http.post(this.baseUrl + 'account/register', model).pipe(
     map((user: User) => {
       if (user) {
