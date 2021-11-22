@@ -3,6 +3,7 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    partial class AppDataContextModelSnapshot : ModelSnapshot
+    [Migration("20211122113012_ExtendedUserEntity")]
+    partial class ExtendedUserEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.0");
@@ -56,7 +58,7 @@ namespace API.Data.Migrations
                     b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LookingFor")
+                    b.Property<string>("LookingForm")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -90,6 +92,7 @@ namespace API.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PublicId")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Url")

@@ -58,3 +58,6 @@ C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debu
 C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debug\net6.0\Data\UserSeedData.json
+C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Ldvs\Desktop\Udemy\ASP .NET CORE - Angular\SimpleDatingApp\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
